@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/mapa"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/border"
+        android:id="@+id/box">
+
+        <ImageView
+            android:id="@+id/trazi"
+            android:layout_width="25dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_trazi_foreground" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/location"
+            android:layout_toRightOf="@+id/trazi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            />
+
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-48dp"
+            android:layout_toRightOf="@+id/location"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gps_foreground" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/dodaj"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="openActivityFormaRiba"
+        android:background="@drawable/bordergreen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/check_foreground"/>
+
+    <ImageView
+        android:id="@+id/izadi"
+        android:layout_toRightOf="@+id/box"
+        android:layout_marginLeft="-55dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="openActivityLogin"
+        android:background="@drawable/borderred"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_foreground"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

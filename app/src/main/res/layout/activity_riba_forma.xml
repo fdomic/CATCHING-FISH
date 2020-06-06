@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/crop"
+    tools:context=".RibaForma">
+
+
+    <TextView
+        android:id="@+id/textInfRiba"
+        android:layout_width="100sp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="350dp"
+        android:fontFamily="@font/autour_one"
+        android:text="VRSTA :"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textInfTezina"
+        android:layout_width="100sp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/autour_one"
+        android:text="TEZINA:"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfDuzina" />
+
+    <TextView
+        android:id="@+id/textInfPZ"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/autour_one"
+        android:text="RIBA JE :"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfDatu" />
+
+    <TextView
+        android:id="@+id/textInfMamac"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/autour_one"
+        android:text="MAMAC:"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfRiba" />
+
+
+    <TextView
+        android:id="@+id/textInfDuzina"
+        android:layout_width="100sp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/autour_one"
+        android:text="DUZINA:"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfMamac" />
+
+    <TextView
+        android:id="@+id/textInfDuzina2"
+        android:layout_width="100sp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/autour_one"
+        android:text="CM"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textTezina"
+        app:layout_constraintTop_toBottomOf="@+id/textInfMamac" />
+
+    <TextView
+        android:id="@+id/textInfDuzina3"
+        android:layout_width="100sp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/autour_one"
+        android:text="KG"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textDuzina"
+        app:layout_constraintTop_toBottomOf="@+id/textInfMamac" />
+
+    <TextView
+        android:id="@+id/textInfDatu"
+        android:layout_width="100sp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/autour_one"
+        android:text="DATUM:"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInfTezina" />
+
+    <EditText
+        android:id="@+id/textMamac"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/border_riba"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRiba" />
+
+
+    <EditText
+        android:id="@+id/textPZ"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDatum" />
+
+    <EditText
+        android:id="@+id/textRiba"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textTezina"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="150dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMamac" />
+
+    <EditText
+        android:id="@+id/textDuzina"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTezina" />
+
+    <EditText
+        android:id="@+id/textDatum"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDuzina" />
+
+    <ImageView
+        android:id="@+id/dodajRiba"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bordergreen"
+        android:onClick="podatciSalji"
+        android:scaleType="centerCrop"
+        android:src="@drawable/check_foreground"
+        app:layout_constraintEnd_toStartOf="@+id/izadiRiba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPZ" />
+
+    <ImageView
+        android:id="@+id/izadiRiba"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/borderred"
+        android:onClick="nazad"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dodajRiba"
+        app:layout_constraintTop_toBottomOf="@+id/textPZ" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
